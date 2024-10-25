@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Mortal Kombat</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background-image: url('fondomk.jpg');
+            background-size: 100%; 
+            background-position: center top;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        .character-card {
+            transition: transform 0.2s;
+            width: 350px;
+            height: 550px;
+        }
+        .character-card:hover {
+            transform: scale(1.05);
+        }
+        .character-img {
+            width: 90%;
+            height: 430px; 
+            object-fit: cover;
+            border-radius: 8px;
+            margin: 0 auto; 
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+
+    <header class="bg-gray-900 text-white p-4">
+        <h1 class="text-center text-3xl">Mortal Kombat de 1992</h1>
+        <nav class="mt-4">
+            <ul class="flex justify-center space-x-4">
+                <li><a class="hover:underline" href="#home">Inicio</a></li>
+                <li><a class="hover:underline" href="#personajes">Personajes Elegibles</a></li>
+                <li><a class="hover:underline" href="#jefes">Jefes</a></li>
+                <li><a class="hover:underline" href="#personaje-oculto">Personaje Oculto</a></li>
+                <li><a class="hover:underline" href="#escenarios">Escenarios</a></li> 
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="p-6">
+        <h2 class="text-2xl font-bold text-white">Inicio</h2>
+        <div class="bg-gray-800 bg-opacity-70 p-4 rounded">
+            <p class="mt-2 text-white">
+                Mortal Kombat, lanzado el 8 de octubre de 1992, es un videojuego de lucha icónico que ha cautivado a jugadores de todas las edades con su emocionante jugabilidad y personajes memorables. 
+                La serie fue creada por Ed Boon y John Tobias, quienes diseñaron un juego que combinaba una jugabilidad innovadora con una narrativa intrigante.
+            </p>
+            <p class="mt-2 text-white">
+                En Mortal Kombat, los jugadores eligen entre una variedad de luchadores, cada uno con habilidades únicas y un conjunto de movimientos especiales. 
+                La narrativa gira en torno a un torneo de lucha, donde los guerreros deben enfrentarse a oponentes mortales en diversas arenas. 
+                Desde su lanzamiento, ha sido famoso por sus brutales "fatalities", movimientos finales que los jugadores pueden ejecutar para terminar a sus oponentes de manera espectacular.
+            </p>
+            <p class="mt-2 text-white">
+                La serie Mortal Kombat ha crecido en popularidad, convirtiéndose en un fenómeno cultural con múltiples secuelas, películas, series de televisión y cómics. 
+                A través de los años, ha evolucionado tanto en términos de jugabilidad como en gráficos, pero siempre ha mantenido su esencia, convirtiéndose en un pilar en el género de los videojuegos de lucha.
+                ¡Explora a los personajes que han marcado la historia de los videojuegos y descubre sus habilidades únicas!
+            </p>
+            <p class="mt-2 text-white">
+                La historia se centra en la travesía de Liu Kang para salvar al mundo del malvado hechicero Shang Tsung, travesía que acaba con su enfrentamiento en el torneo llamado Mortal Kombat.
+            </p>
+            <p></p>
+            <h2 class="text-2xl font-bold text-white">
+                A continuación les mostraremos un panel con los primeros personajes del videojuego:
+            </h2>
+        </div>
+    </section>
+
+   
+    <section id="personajes" class="p-6">
+        <h2 class="text-2xl font-bold text-white">Personajes Elegibles</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-4">
+            <a href="info1.html" class="character-card bg-white p-6 rounded shadow hover:shadow-lg cursor-pointer">
+                <img src="scorpion.jpg" alt="Scorpion" class="character-img">
+                <h3 class="text-xl font-semibold mt-4">Scorpion</h3>
+                <p>Poder: Llamas del Infierno</p>
+            </a>
+            <a href="info2.html" class="character-card bg-white p-6 rounded shadow hover:shadow-lg cursor-pointer">
+                <img src="./subzero.jpg" alt="Sub-Zero" class="character-img">
+                <h3 class="text-xl font-semibold mt-4">Sub-Zero</h3>
+                <p>Poder: Control del Hielo</p>
+            </a>
+            <a href="info3.html" class="character-card bg-white p-6 rounded shadow hover:shadow-lg cursor-pointer">
+                <img src="liukang.jpg" alt="Liu Kang" class="character-img">
+                <h3 class="text-xl font-semibold mt-4">Liu Kang</h3>
+                <p>Poder: Fuego de Dragón</p>
+            </a>
+            <a href="info4.html" class="character-card bg-white p-6 rounded shadow hover:shadow-lg cursor-pointer">
+                <img src="raiden.jpg" alt="Raiden" class="character-img">
+                <h3 class="text-xl font-semibold mt-4">Raiden</h3>
+                <p>Poder: Rayo Divino</p>
+            </a>
+            <a href="info5.html" class="character-card bg-white p-6 rounded shadow hover:shadow-lg cursor-pointer">
+                <img src="sonya.jpg" alt="Sonya Blade" class="character-img">
+                <h3 class="text-xl font-semibold mt-4">Sonya Blade</h3>
+                <p>Poder: Aplastar con Fuerza</p>
+            </a>
+            <a href="info6.html" class="character-card bg-white p-6 rounded shadow hover:shadow-lg cursor-pointer">
+                <img src="johnny.jpg" alt="Johnny Cage" class="character-img">
+                <h3 class="text-xl font-semibold mt-4">Johnny Cage</h3>
+                <p>Poder: Golpes Sorpresa</p>
+            </a>
+            <a href="info7.html" class="character-card bg-white p-6 rounded shadow hover:shadow-lg cursor-pointer">
+                <img src="kano.jpg" alt="Kano" class="character-img">
+                <h3 class="text-xl font-semibold mt-4">Kano</h3>
+                <p>Poder: Cuchillas</p>
+            </a>
+        </div>
+    </section>
+
+   
+    <section id="jefes" class="p-6">
+        <h2 class="text-2xl font-bold text-white">Jefes</h2>
+        <div class="flex flex-wrap gap-4 mt-4">
+            <a href="info8.html" class="character-card bg-white p-6 rounded shadow hover:shadow-lg cursor-pointer">
+                <img src="goro.jpg" alt="Goro" class="character-img">
+                <h3 class="text-xl font-semibold mt-4">Goro</h3>
+                <p>Poder: Fuerza Sobrehumana</p>
+            </a> 
+            <a href="info9.html" class="character-card bg-white p-6 rounded shadow hover:shadow-lg cursor-pointer">
+                <img src="shangtsung.jpg" alt="Shang Tsung" class="character-img">
+                <h3 class="text-xl font-semibold mt-4">Shang Tsung</h3>
+                <p>Poder: Robo de Almas</p>
+            </a>
+        </div>
+    </section>
+
+   
+    <section id="personaje-oculto" class="p-6">
+        <h2 class="text-2xl font-bold text-white">Personaje Oculto</h2>
+        <div class="grid grid-cols-1 gap-4 mt-4">
+            <a href="info10.html" class="character-card bg-white p-6 rounded shadow hover:shadow-lg cursor-pointer">
+                <img src="reptile.jpg" alt="Reptile" class="character-img">
+                <h3 class="text-xl font-semibold mt-4">Reptile</h3>
+                <p>Poder: Invisibilidad y Ácido</p>
+            </a>
+        </div>
+    </section>
+
+
+<section id="escenarios" class="p-6">
+    <h2 class="text-2xl font-bold text-white">Escenarios</h2>
+    <div class="bg-gray-800 bg-opacity-70 p-4 rounded">
+        <ul class="mt-4 text-white">
+            <li class="mt-2">1. The Pit</li>
+            <li class="mt-2">2. The Living Forest</li>
+            <li class="mt-2">3. The Courtyard</li>
+            <li class="mt-2">4. The Temple</li>
+            <li class="mt-2">5. The Graveyard</li>
+            <li class="mt-2">6. The Palace Gates</li>
+            <li class="mt-2">7. The Bridge</li>
+            <li class="mt-2">8. The Tower</li>
+        </ul>
+    </div>
+</section>
+
+    <footer class="bg-gray-900 text-white text-center p-4">
+        <p>&copy; 2024 Mortal Kombat</p>
+    </footer>
+
+</body>
+</html>
